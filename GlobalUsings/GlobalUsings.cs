@@ -1,0 +1,11 @@
+﻿global using AnnouncementTask.Configuration;
+global using AnnouncementTask.Data.Context;
+global using AnnouncementTask.Data.Entities;
+global using AnnouncementTask.Data.Repositories.Interfaces;
+global using AnnouncementTask.DTO;
+global using AnnouncementTask.Endpoints;
+global using AnnouncementTask.Models;
+global using AnnouncementTask.Services;
+global using AnnouncementTask.Services.Interfaces;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
