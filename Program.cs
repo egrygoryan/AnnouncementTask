@@ -6,9 +6,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServices();
 
-var connectionString = builder.Configuration.GetConnectionString("SqlConnection");
+var connectionString = builder.Configuration.GetConnectionString("SqlLiteConnection");
 builder.Services.AddDbContext<AnnouncementContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlite(connectionString));
 
 var app = builder.Build();
 
